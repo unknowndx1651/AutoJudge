@@ -63,6 +63,7 @@ Each data sample contains:
 The evaluation results for various classifiers and regressors have been reported.
 
 ## How to run locally?
+(Ensure your Python is up to date.)
 1. Clone the GitHub Repository.
 2. Create and active a virtual environment.
 3. Install dependencies like:  
@@ -92,7 +93,7 @@ The Streamlit UI is minimal and focused:
     * Predicted score (0 - 10)
 
 Internals:
-- The UI sends the combined text to the saved vectoriser and models (models/vectoriser.joblib, models/classifier.joblib, models/regressor.joblib) to get predictions.
+- The UI sends the combined text to the saved vectoriser and models (models/vectoriser.pkl, models/RFC.pkl, models/RFR.pkl) to get predictions.
 - If models are missing, the app prompts you to run training scripts or place saved models in models/.
 
 ## Details:
