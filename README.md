@@ -68,7 +68,7 @@ The evaluation results for various classifiers and regressors have been reported
 3. Install dependencies like:  
     * pip install --upgrade pip  
     * pip install -r requirements.txt
-4. Place "dataset.csv" inside data/ folder (OR place "dataset.jsonl" and run "data_loader.py" from src/ to convert it to .csv format)
+4. (OPTIONAL) Place "dataset.csv" inside data/ folder (OR place "dataset.jsonl" and run "data_loader.py" from src/ to convert it to .csv format)
 5. (OPTIONAL) Train models again by running src/classifier.py and src/regressor.py
     - run using  
     "python -m src.file"  
