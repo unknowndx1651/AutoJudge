@@ -21,11 +21,11 @@ def get_difficulty_score(difficulty,score)->float:
         case 2:
             return min(10.0, 0.7*score + 6.0)
 
-def predict_difficulty(text):
+def predict_difficulty(desc,inp,out):
     data=pd.DataFrame({"title": [""], 
-         "description": [text],
-         "input_description": [""],
-         "output_description": [""],
+         "description": [desc],
+         "input_description": [inp],
+         "output_description": [out],
          "sample_io": [""]})
     text_df = preprocessing.preprocessing(data)
 
@@ -86,13 +86,8 @@ if st.button("Predict Difficulty",width="stretch" ):
     if not problem_desc.strip():
         st.warning("Please enter the problem description.")
     else:
-        full_text = (
-            problem_desc + " " +
-            input_desc + " " +
-            output_desc
-        )
-
-        difficulty, score = predict_difficulty(full_text)
+        
+        difficulty, score = predict_difficulty(problem_desc,input_desc,output_desc)
         st.markdown("### Prediction Result", text_alignment="center")
 
         col1, col2 = st.columns(2)
