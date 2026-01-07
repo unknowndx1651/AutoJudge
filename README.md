@@ -18,7 +18,7 @@ Each data sample contains:
 3. input_description
 4. output_description
 5. problem_class → Easy / Medium / Hard
-6. roblem_score → numerical value (0–10)
+6. problem_score → numerical value (0–10)
 
 ## Approach & Models used:
 ### 1. Feature engineering:
@@ -64,18 +64,23 @@ The evaluation results for various classifiers and regressors have been reported
 
 ## How to run locally?
 (Ensure your Python is up to date.)
+Open the test folder in command prompt and run these commands:
 1. Clone the GitHub Repository.
-2. Create and active a virtual environment.
-3. Install dependencies like:  
+    * git clone "https://github.com/unknowndx1651/AutoJudge".git
+2. Create and active a virtual environment. Enter the repository.
+    * python -m venv venv
+    * venv\Scripts\activate
+    * cd AutoJudge
+4. Install dependencies like:  
     * pip install --upgrade pip  
     * pip install -r requirements.txt
-4. (OPTIONAL) Place "dataset.csv" inside data/ folder (OR place "dataset.jsonl" and run "data_loader.py" from src/ to convert it to .csv format)
-5. (OPTIONAL) Train models again by running src/classifier.py and src/regressor.py
+5. (OPTIONAL) Place "dataset.csv" inside data/ folder (OR place "dataset.jsonl" and run "data_loader.py" from src/ to convert it to .csv format)
+6. (OPTIONAL) Train models again by running src/classifier.py and src/regressor.py
     - run using  
     "python -m src.file"  
     from AutoJudge/ directory to train and save models in models/
-6. From AutoJudge/ run   
-    "python -m streamlit run app.py"
+7. From AutoJudge/ run   
+    * python -m streamlit run app.py
     to open the web interface
 
 ## Web Interface (Built using Streamlit):
