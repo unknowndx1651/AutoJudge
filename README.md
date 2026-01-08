@@ -1,4 +1,13 @@
 # AutoJudge - Predicting Programming Problem Difficulty:
+## Author Details:
+Name : Daksh Shah  
+Enrollment number : 24115132  
+Email : dakshshah71006@gmail.com  
+GitHub : https://github.com/unknowndx1651
+
+## Demo Video:
+
+Video Link (YouTube) : https://youtu.be/PGsrHK_6KJg
 
 AutoJudge is a project that predicts (a) the difficulty class of a programming problem (Easy / Medium / Hard) and (b) a numerical difficulty score, using only the textual problem statement (title, description, input/output).  
 The project includes data preprocessing, feature extraction, training (classification + regression)and a Streamlit web UI.
@@ -101,14 +110,6 @@ Internals:
 - The UI sends the combined text to the saved vectoriser and models (models/vectoriser.pkl, models/RFC.pkl, models/RFR.pkl) to get predictions.
 - If models are missing, the app prompts you to run training scripts or place saved models in models/.
 
-## Details:
-Name : Daksh Shah  
-Enrollment number : 24115132  
-Email : dakshshah71006@gmail.com  
-GitHub : https://github.com/unknowndx1651
 
-## Demo Video:
-
-Video Link (YouTube) : https://youtu.be/PGsrHK_6KJg
 
 
